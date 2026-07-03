@@ -1,0 +1,52 @@
+#title in header
+title: "Edward."
+
+#main info
+#owner
+owner: "I am Edward Liu"
+email: 18089598383@163.com
+info: "A tech geek with no perseverance, Fine"
+#description
+desc: "Like technology, but not too much patience, once worked as a software engineer in Alibaba, Tencent, etc., more maverick"
+
+#menu
+menu:
+  # About: /About
+
+#index/main page max show posts (in number)
+max_post: 4
+
+# Colors use hex color without #
+# Theme color
+tcolor: 0FA0CE
+
+# Define path to user css
+#(could be also located outside of theme)
+# Relative to source/ directory
+usercss: css/user.css
+
+# social profile at the footer/bottom
+footer: true
+placename: Earth
+placelink: https://github.com/lililbwl
+github: https://github.com/lililbwl
+linkedin: https://github.com/lililbwl
+twitter: https://github.com/lililbwl
+instagram: https://github.com/lililbwl
+
+# Misc
+nanobar: /js/nanobar.min.js
+switch_light: ☀️
+switch_dark: 🌑
+
+# favicon
+favicon: /images/favicon.png
+# thumbnail
+thumbnail: /images/thumbnail.jpg
+
+article:
+  thumbnail: true
+
+# DISQUS comments (sign up to Disqus to get disqus_shortname)
+disqus_enabled: false
+disqus_shortname: https-adisaktijrs-github-io
