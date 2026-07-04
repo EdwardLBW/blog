@@ -1,7 +1,7 @@
 ---
 title: items.md
 date: 2023-11-29 10:23:11
-tags: ["projects"]
+tags: ["个人感悟"]
 ---
 
 List some personal projects and company projects.  

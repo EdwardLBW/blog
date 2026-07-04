@@ -35,6 +35,7 @@
     <div class="row">
       <div class="nine columns left">
         <a href="<%= config.root %>">Home</a>
+        <a href="<%- url_for('/articles/') %>" class="ml">Articles</a>
         <% for (name in theme.menu) { %>
           <% if (theme.menu[name]) { %>
           <a href="<%- url_for(theme.menu[name]) %>" class="ml"><%- name %></a>

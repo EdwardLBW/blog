@@ -4,7 +4,7 @@ title: "Edward."
 #main info
 #owner
 owner: "I am Edward Liu"
-email: 18089598383@163.com
+# email: 18089598383@163.com
 info: "A tech geek with no perseverance, Fine"
 #description
 desc: "Like technology, but not too much patience, once worked as a software engineer in Alibaba, Tencent, etc., more maverick"
@@ -12,6 +12,17 @@ desc: "Like technology, but not too much patience, once worked as a software eng
 #menu
 menu:
   # About: /About
+  About: /about/
+
+# Articles page tag filters (display order)
+article_tags:
+  - 前端
+  - 后端
+  - 算法
+  - AI
+  - 数据
+  - 个人感悟
+  - 市场行情
 
 #index/main page max show posts (in number)
 max_post: 4

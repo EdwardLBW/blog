@@ -1,7 +1,7 @@
 ---
 title: cognitive_complexity
 date: 2023-11-30 15:20:52
-tags: ["code", "improvement", "cognitive complexity"]
+tags: ["前端"]
 ---
 Recently, I focused on the code improvement, to fix the issues found out by SonarQube.
 The SonarQube has a rules that one function cognitive complexity should not over 15, otherwise, it will be reported as a critical issue.

@@ -1,7 +1,7 @@
 ---
 title: Code flow improvement by using the LUT instead of the if condition judgement
 date: 2023-11-28 15:21:54
-tags: ["code improvement", "LUT"]
+tags: ["前端"]
 ---
 
 Today`s topic is using the LUT instead of the if condition judgement to improve the code flow.

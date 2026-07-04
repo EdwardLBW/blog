@@ -1,0 +1,64 @@
+<%
+  var filterTags = theme.article_tags || [];
+  if (!filterTags.length) {
+    var tagSet = {};
+    site.posts.each(function(post) {
+      if (post.tags && post.tags.length) {
+        post.tags.forEach(function(tag) {
+          tagSet[tag.name] = true;
+        });
+      }
+    });
+    filterTags = Object.keys(tagSet).sort();
+  }
+  var articlesUrl = url_for('/articles/');
+%>
+
+<h2><%- page.title %></h2>
+
+<div class="row">
+  <div class="nine columns left mb-3">
+    <a href="<%- articlesUrl %>">全部</a>
+    <% filterTags.forEach(function(tag) { %>
+    <a href="<%- articlesUrl %>?tag=<%- encodeURIComponent(tag) %>" class="ml"><%- tag %></a>
+    <% }); %>
+  </div>
+</div>
+
+<% site.posts.sort('date', 'desc').each(function(post) {
+  var postTags = [];
+  if (post.tags && post.tags.length) {
+    post.tags.forEach(function(tag) {
+      postTags.push(tag.name);
+    });
+  }
+%>
+    <article data-tags="<%- postTags.join(',') %>">
+      <div class="row">
+
+        <div class="three columns left lit">
+          <p class="bottom"><%- full_date(post.date, 'll') %></p>
+        </div>
+        <div class="nine columns left mb-3">
+          <a href="<%- url_for(post.path) %>" class="">
+            <% if (post.title == "") { %>
+              no title
+            <% } else { %>
+              <%- post.title %>
+            <% } %>
+          </a>
+        </div>
+      </div>
+    </article>
+<% }); %>
+
+<script>
+(function() {
+  var tag = new URLSearchParams(location.search).get('tag');
+  if (!tag) return;
+  document.querySelectorAll('article[data-tags]').forEach(function(item) {
+    var tags = item.getAttribute('data-tags').split(',').filter(Boolean);
+    item.style.display = tags.indexOf(tag) !== -1 ? '' : 'none';
+  });
+})();
+</script>

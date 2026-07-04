@@ -1,7 +1,7 @@
 ---
 title: WebDriver
 date: 2022-08-29 10:45:59
-tags: ["webdriver", "web", "shadowDom"]
+tags: ["前端"]
 ---
 
 Recently, I am developing an industrial software, which has high requirements for software quality. So, the developers must write unit test code that coverage rate must be 100%. At the same time, the automated testing is a must, but, we met some problems about automated testing. just do some records and summaies.
